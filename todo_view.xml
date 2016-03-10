@@ -46,6 +46,23 @@
   </field>
 </record>
 
+<!-- Search view -->
+<record id="view_filter_todo_task" model="ir.ui.view">
+  <field name="name">To-do Task Filter</field>
+  <field name="model">todo.task</field>
+  <field name="arch" type="xml">
+    
+    <!-- Not Done, Done -->
+    <search>
+      <field name="name"/>
+      <filter string="Not Done"
+              domain="[('is_done','=',False)]"/>
+      <filter string="Done"
+              domain="[('is_done','!=',False)]"/>
+    </search>
+  </field>
+</record>
+
     <!-- Action to open To-do Task list -->
     <act_window id="action_todo_task"
       name="To-do Task"
