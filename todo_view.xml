@@ -33,6 +33,19 @@
     </field>
 </record>
 
+<!-- List view -->
+<record id="view_tree_todo_task" model="ir.ui.view">
+  <field name="name">To-do Task Tree</field>
+  <field name="model">todo.task</field>
+  <field name="arch" type="xml">
+    <!-- Line for a done task is shown in gray -->
+    <tree colors="gray:is_done==True">
+      <field name="name"/>
+      <field name="is_done"/>
+    </tree>
+  </field>
+</record>
+
     <!-- Action to open To-do Task list -->
     <act_window id="action_todo_task"
       name="To-do Task"
