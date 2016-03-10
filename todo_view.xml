@@ -22,9 +22,9 @@
       res_model="todo.task"
       view_mode="tree,form" />
 
-    <!-- Menu item to open To-do Task list -->
+    <!-- Menu item to open To-do Task list in Messaging menu -->
     <menuitem id="menu _todo_task"
-      name="To-Do Tasks"
+      name="To-do Tasks"
       parent="mail.mail_feeds"
       sequence="20"
       action="action_todo_task" />
