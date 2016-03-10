@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*
-
-<!-- api enables business logic for the buttons -->
-from openerp import models, fields, api
+from openerp import models, fields
 
 <!-- todo.task model -->
 class TodoTask(models.Model):    
