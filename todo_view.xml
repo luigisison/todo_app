@@ -9,7 +9,7 @@
     <field name="arch" type="xml">
       
       <form>
-        <-- Form header has buttons -->
+        <!-- Form header has buttons -->
         <header>
           <button name="do_toggle_done" type="object"
                   string="Toggle Done" class="oe_highlight" />
@@ -17,7 +17,7 @@
                   string="Clear All Done" />
         </header>
 
-        <-- Form sheet has content -->
+        <!-- Form sheet has content -->
         <sheet>
           <group name="group_top">
           <group name="group_left">
