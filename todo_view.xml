@@ -52,7 +52,7 @@
   <field name="model">todo.task</field>
   <field name="arch" type="xml">
     
-    <!-- Not Done, Done -->
+    <!-- Not Done filter, Done filter -->
     <search>
       <field name="name"/>
       <filter string="Not Done"
